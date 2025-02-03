@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import oilSvg from "../assets/myImages/images (8).jpeg";
 import workerImage from "../assets/myImages/images (9).jpeg";
 import useEmblaCarousel from "embla-carousel-react";

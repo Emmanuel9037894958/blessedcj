@@ -1,9 +1,9 @@
-import React from "react";
+// import React from "react";
 import svgImage from "../assets/star.svg";
 import ceoImage from "../assets/1734866388736_2.jpg";
 import { MessageSquareIcon } from "lucide-react";
 import Footer from "./Footer";
-import CustomersReview from "./CustomersReview";
+// import CustomersReview from "./CustomersReview";
 import WhyChooseUs from "./WhyChooseUs";
 
 function MiddielRange() {
