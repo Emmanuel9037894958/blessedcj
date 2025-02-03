@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+.box{
+  box-shadow: 0 8px 6px -1px rgba(0,0,0,0.8);
+}
+.specificImages :hover{
+        transform: scale(1.05);
+}
+.whatsapp-icon {  
+  position: sticky;  
+}
+
