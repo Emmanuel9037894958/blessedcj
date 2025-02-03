@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import NavBar from "../Components/NavBar";
@@ -19,15 +19,15 @@ import whatappSvg from '../assets/whasaap.svg'
 
 
 function Home() {
-  const [color, setColor] = useState("green");
+  // const [color, setColor] = useState("green");
 
-  function handleColorchange() {
-    if (color === "green") {
-      setColor("gray");
-    } else {
-      setColor("green");
-    }
-  }
+  // function handleColorchange() {
+  //   if (color === "green") {
+  //     setColor("gray");
+  //   } else {
+  //     setColor("green");
+  //   }
+  // }
 
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()]);
 
