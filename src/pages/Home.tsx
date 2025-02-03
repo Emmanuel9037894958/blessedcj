@@ -41,13 +41,13 @@ function Home() {
         <NavBar />
         <div className="fixed text-orange-600 z-50 pt-2 pl-3"></div>
         <EmblaCarousel />
-          <div className="relative">
-            
-        <div className="fixed top-10">
+          <div className="">
+        <div className="fixed top-30">
         <a href="https://wa.link/ekmonf">
         <img src={whatappSvg} alt=""  className="bg-green-800 ml-[440px] mt-[180px] z-50 rounded-full extranine:ml-[270px] extranine:mt-[300px] extraeight:ml-[320px] extraeight:mt-[240px] extrafive:ml-[390px]  extrafive:mt-[170px] box extrapointer:ml-[420px] extra:ml-[470px] extraone:ml-[510px] extraone:w-[80px] extratwo:ml-[560px] extrapointerone:ml-[590px] lg:hidden md:hidden xl:hidden whatapp"/>
         </a>
           </div>
+            
           <h3 className="text-center pt-3 text-xl font-normal text-pink-900">
             Welcome to Blessed CJ Oil & Gas Ltd.
           </h3>

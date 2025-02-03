@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import oilSvg from "../assets/myImages/images (8).jpeg";
 import workerImage from "../assets/myImages/images (9).jpeg";
-import useEmblaCarousel from "embla-carousel-react";
-import Autoplay from "embla-carousel-autoplay";
+// import useEmblaCarousel from "embla-carousel-react";
+// import Autoplay from "embla-carousel-autoplay";
 import secondWorkersImage from "../assets/myImages/images (11).jpeg";
 import myImage2 from "../assets/myImages/istockphoto-470342624-612x612.jpg";
 import "../index.css";
@@ -18,7 +18,7 @@ function WhyChooseUs() {
   useEffect(() =>{
     Aos.init({duration:2000})
   },[]);
-  const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()]);
+  // const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()]);
   return (
     <section data-aos="fade-up">
       <div>
