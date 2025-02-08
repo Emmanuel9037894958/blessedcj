@@ -42,11 +42,11 @@ function WhyChooseUs() {
         <img
           src={oilSvg}
           alt=""
-          className="mx-auto w-full h-80 brightness-50 object-cover xl:h-[400px]"
+          className="mx-auto w-full h-[400px] brightness-50 object-cover xl:h-[400px]"
         />
       </div>
       <div className="border-b-8 box">
-        <h1 className="pl-5 text-2xl pr-28 pt-7 pb-5">
+        <h1 className="pl-5 text-lg font-bold pr-28 pt-7 pb-5">
           Reliable Diesel Supply For Every Need
         </h1>
         <p className="pl-5 pr-20 text-xl pb-9">
