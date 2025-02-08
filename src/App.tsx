@@ -1,4 +1,4 @@
-// import React from 'react'
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import AboutUs from './pages/AboutUs'
@@ -10,13 +10,19 @@ import PetroleumImport from './Components/PetroleumImport'
 import Welcome from './Components/Welcome'
 
 
+//  style={{
+//                   color: isActive("/contact")
+//                     ? "white"
+//                     : "rgb(234 88 12 / var(--tw-text-opacity, 1))",
+//                 }}
+
 function App() {
 
   return (
     <BrowserRouter>
     <Routes>
       <Route  path='/' element={<Home />}/>
-      <Route path='/ourservice' element={<OurServices />}/>
+      <Route path='/Ourservices' element={<OurServices />}/>
       <Route path='/media' element={<Media />}/>
       <Route path='/sustainability' element={<Sustainability />}/>
       <Route path='/AboutUs' element={<AboutUs />}/>

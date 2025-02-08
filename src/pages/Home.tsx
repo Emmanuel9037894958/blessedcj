@@ -42,9 +42,9 @@ function Home() {
         <div className="fixed text-orange-600 z-50 pt-2 pl-3"></div>
         <EmblaCarousel />
           <div className="">
-        <div className="fixed top-30">
+        <div className="fixed top-[250px] bottom-52 z-50">
         <a href="https://wa.link/ekmonf">
-        <img src={whatappSvg} alt=""  className="bg-green-800 ml-[440px] mt-[180px] z-50 rounded-full extranine:ml-[270px] extranine:mt-[300px] extraeight:ml-[320px] extraeight:mt-[240px] extrafive:ml-[390px]  extrafive:mt-[170px] box extrapointer:ml-[420px] extra:ml-[470px] extraone:ml-[510px] extraone:w-[80px] extratwo:ml-[560px] extrapointerone:ml-[590px] lg:hidden md:hidden xl:hidden whatapp"/>
+        <img src={whatappSvg} alt=""  className="bg-green-800 ml-[440px] mt-[180px] z-50 rounded-full extranine:ml-[270px] extranine:mt-[300px] extraeight:ml-[340px] extraeight:mt-[320px] extrafive:ml-[360px]  extrafive:mt-[370px] box extrapointer:ml-[420px] extra:ml-[470px] extraone:hidden extratwo:ml-[560px] extrapointerone:hidden lg:hidden md:hidden xl:hidden whatapp extrafour:ml-[310px]"/>
         </a>
           </div>
             
@@ -79,7 +79,7 @@ function Home() {
               <img
                 src={image.companyGallary}
                 alt=""
-                className="w-full h-96 mx-auto pt-6 object-cover brightness-50"
+                className="w-full h-96 mx-auto pt-1 object-cover brightness-50"
               />
             
                <Link to='/petroleumproductsimportation'>
@@ -99,7 +99,7 @@ function Home() {
             complemented by world class storge facilities and retail
             outlets/chanels in all six geopolitical zones in Nigeria. We
             continuall develop strategic infrastruce to facilitate the
-            operational efficiency of our integrated bouquet of services,    At our core, we believe in fostering strong partnerships with our stakeholders, ensuring collaborative efforts that drive innovation and excellence. Our dedicated team of professionals is committed to delivering exceptional service, leveraging our expertise to meet the dynamic demands of the market while contributing positively to the communities we serve. We are continuously exploring new technologies and practices to improve our services further and adapt to the evolving landscape of the industry.    Safety is our top priority. We adhere to the highest international standards in safety and environmental management, actively implementing measures to minimize our ecological footprint. Our commitment to responsible operations ensures that we protect our employees, customers, and the environment in which we operate.  
+            operational efficiency of our integrated bouquet of services.  <p>  At our core, we believe in fostering strong partnerships with our stakeholders, ensuring collaborative efforts that drive innovation and excellence. Our dedicated team of professionals is committed to delivering exceptional service, leveraging our expertise to meet the dynamic demands of the market while contributing positively to the communities we serve. We are continuously exploring new technologies and practices to improve our services further and adapt to the evolving landscape of the industry.</p>   <p> Safety is our top priority. We adhere to the highest international standards in safety and environmental management, actively implementing measures to minimize our ecological footprint.</p> Our commitment to responsible operations ensures that we protect our employees, customers, and the environment in which we operate.  
   
 
           </p>
@@ -111,7 +111,7 @@ function Home() {
               marginBottom: "38px",
             }}
           >
-            <img src={myImage10} alt="" className="w-full mx-auto h-80 object-cover xl:h-[900px] " />
+            <img src={myImage10} alt="" className="w-full mx-auto h-80 object-cover xl:h-[900px]" />
             <a href="">
               
               <button className="btn w-full btn-active font-bold border-r-0 xl:text-xl hover:text-green-600">
@@ -127,7 +127,7 @@ function Home() {
               boxShadow: "50px solid gray",
             }}
           >
-            <img src={tankerImage} alt="" className="w-full mx-auto h-80 object-cover xl:h-[800px]" />
+            <img src={tankerImage} alt="" className="w-full mx-auto object-cover xl:h-[800px]" />
             <button className="btn w-full btn-active font-bold xl:text-xl hover:text-green-600">
               Logistics & Haulage services
             </button>

@@ -8,24 +8,48 @@ import whatsaapImage from "../assets/bxl-whatsapp.svg";
 import { FacebookIcon } from "lucide-react";
 import { TwitterIcon } from "lucide-react";
 import { PhoneIncomingIcon } from "lucide-react";
-
+import { useState } from "react";
 
 function Contact() {
+  const [yourName, setName] = useState("");
+  const [companyName, setCompanyName] = useState("");
+  const [emailId, setEmailId] = useState("");
+  const [mobileNum, setMobileNum] = useState("");
+
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+    if (!yourName || !companyName || !emailId || !mobileNum) {
+      alert("Please fill in all fields before submitting.");
+      return;
+    }
+
+    alert("Form submitted successfully!");
+    setName("");
+    setCompanyName("");
+    setEmailId("");
+    setMobileNum("");
+  };
   return (
-    <section className="overflow">
+    <section className="overflow-hidden">
       <div className="">
         <img
           src={companyLogo}
           alt=""
-          className="w-24 h-24 fixed z-20 rounded-full mt-14 ml-2 extra:mt-2 xl:mt-16 xl:w-32 xl:h-32"
+          className="w-24 h-24 fixed z-20 rounded-full mt-14 ml-2 extra:mt-2 xl:mt-16 xl:w-32 xl:h-32 extraeight:mt-2"
         />
       </div>
-       <div className="">
-       <NavBar />
-       </div>
       <div className="">
-        <h1 className="absolute pt-48 pl-8 text-white text-4xl xl:text-5xl xl:pl-52 xl:pt-60">Contact Us</h1>
-        <img src={telephoneImage} alt="" className="w-full h-80 object-cover xl:h-[600px] extrasix:h-[400px] extrathree:h-[400px] extraone:h-[400px] extra:h-[400px] extraeight:h-[400px]" />
+        <NavBar />
+      </div>
+      <div className="">
+        <h1 className="absolute pt-48 pl-8 text-white text-4xl xl:text-5xl xl:pl-52 xl:pt-60">
+          Contact Us
+        </h1>
+        <img
+          src={telephoneImage}
+          alt=""
+          className="w-full h-80 object-cover xl:h-[600px] extrasix:h-[400px] extrathree:h-[400px] extraone:h-[400px] extra:h-[400px] extraeight:h-[400px]"
+        />
       </div>
       <div>
         <h1 className="pl-5 pt-8 text-3xl text-green-600">Get in Touch...</h1>
@@ -43,26 +67,35 @@ function Contact() {
       <p className="pl-5 pr-5 pt-5">
         Kindly fill out the form below, we will get back to you shortly
       </p>
-      <form className="grid gap-6 pl-5 pt-16 xl:ml-[480px]">
+      <form
+        className="grid gap-6 pl-5 pt-16 xl:ml-[480px]"
+        onSubmit={handleSubmit}
+      >
         <input
           type="text"
           placeholder="Your Name"
-          className="w-[400px] h-10 pl-3 rounded border-b-2 border-0"
+          className="w-[400px] h-10 pl-3 rounded border-b-2 border-0 extranine:w-52"
         />
         <input
           type="text"
           placeholder="Company Name"
-          className="w-[400px] h-10 pl-3 rounded border-b-2 border-0"
+          className="w-[400px] h-10 pl-3 rounded border-b-2 border-0 extranine:w-52"
+          value={companyName}
+          onChange={(e) => setCompanyName(e.target.value)}
         />
         <input
           type="text"
-          placeholder="our Email ID"
-          className="w-[400px] h-10 pl-3 rounded border-b-2 border-0"
+          placeholder="your Email ID"
+          className="w-[400px] h-10 pl-3 rounded border-b-2 border-0 extranine:w-52"
+          value={emailId}
+          onChange={(e) => setEmailId(e.target.value)}
         />
         <input
           type="number"
           placeholder="Mobile Number"
-          className="w-[400px] h-10 pl-3 rounded border-b-2 border-0"
+          className="w-[400px] h-10 pl-3 rounded border-b-2 border-0 extranine:w-52"
+          value={mobileNum}
+          onChange={(e) => setMobileNum(e.target.value)}
         />
         <textarea
           name=""
@@ -71,33 +104,37 @@ function Contact() {
           rows={5}
           className="w-[400px] "
         ></textarea>
+      <div className="mx-auto pb-24 xl:ml-[40px] extra:pl-14 extrafive:pl-8 xl:mt-0 extraeight:ml-6">
+        <button className="btn bg-green-600 text-white text-lg w-32 extraeight:ml-7 extranine:ml-0">
+          SUBMIT
+        </button>
+      </div>
       </form>
-        <div className="mx-auto pb-24 xl:ml-[530px] extra:pl-14 extrafive:pl-8">
-          <button className="btn bg-green-600 text-white text-lg w-32 extraeight:ml-7 extranine:ml-7">
-            SUBMIT
-          </button>
-        </div>
       <div className="bg-black text-white h-[500px]">
         <div className="xl:flex xl:gap-72 xl:justify-center">
-        <div className="grid justify-items-center pt-8 text-lg">
-          <img
-            src={whatsaapImage}
-            alt=""
-            className="w-12 bg-white rounded-full "
-          />
-          <h1 className="pt-4">+234 5111 111 2232</h1>
-          <h1>+234 1166 777 767</h1>
-        </div>
-        <div className="grid justify-items-center pt-8 text-lg">
-          <img src={phoneImage} alt="" className="w-12 bg-white rounded-full" />
-          <h1 className="pt-4">+234 1111 165 2232</h1>
-          <h1>+234 8166 794 067</h1>
-        </div>
-        <div className="grid justify-items-center pt-8 pb-4 text-lg">
-          <img src={mailSvg} alt="" className="w-12 bg-white rounded-full" />
-          <p className="pt-4">SUPPORT@BCJOG-NG.COM</p>
-          <p>INFO@BCJOG-NG.COM</p>
-        </div>
+          <div className="grid justify-items-center pt-8 text-lg">
+            <img
+              src={whatsaapImage}
+              alt=""
+              className="w-12 bg-white rounded-full "
+            />
+            <h1 className="pt-4">+234 5111 111 2232</h1>
+            <h1>+234 1166 777 767</h1>
+          </div>
+          <div className="grid justify-items-center pt-8 text-lg">
+            <img
+              src={phoneImage}
+              alt=""
+              className="w-12 bg-white rounded-full"
+            />
+            <h1 className="pt-4">+234 1111 165 2232</h1>
+            <h1>+234 8166 794 067</h1>
+          </div>
+          <div className="grid justify-items-center pt-8 pb-4 text-lg">
+            <img src={mailSvg} alt="" className="w-12 bg-white rounded-full" />
+            <p className="pt-4">SUPPORT@BCJOG-NG.COM</p>
+            <p>INFO@BCJOG-NG.COM</p>
+          </div>
         </div>
         <div className="bg-green-600 text-white pt-6 border-white mt-8">
           <h1 className="text-lg pl-5 pr-28 pt-5">

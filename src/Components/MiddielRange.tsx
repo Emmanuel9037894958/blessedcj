@@ -3,10 +3,17 @@ import svgImage from "../assets/star.svg";
 import ceoImage from "../assets/1734866388736_2.jpg";
 import { MessageSquareIcon } from "lucide-react";
 import Footer from "./Footer";
-// import CustomersReview from "./CustomersReview";
+import useEmblaCarousel from "embla-carousel-react";
+import Autoplay from "embla-carousel-autoplay";
 import WhyChooseUs from "./WhyChooseUs";
+import ceoImageTwo from '../assets/1734866356233.jpg'
+import dieselImage from '../assets/images (18).jpeg'
+import presidentImage from '../assets/images (17).jpeg'
+import presidentTinubuImage from '../assets/images (16).jpeg'
 
 function MiddielRange() {
+  const [emblaRef] =useEmblaCarousel({loop:true}, [Autoplay()]);
+  
   return (
     <section>
       <div className="flex justify-center pt-1">
@@ -73,12 +80,30 @@ function MiddielRange() {
         }}
       >
         <h1 className="text-center text-2xl font-bold">News & Articles</h1>
-        <img src={ceoImage} alt="" className="h-64 w-80 mx-auto pt-3 box" />
+        <div className="embla relative " ref={emblaRef}>
+        <div className="embla__container">
+          <div className="embla__slide">
+        <img src={ceoImageTwo} alt="" className="h-[370px] w-80 mx-auto pt-3 box object-cover" />
+          </div>
+          <div className="embla__slide">
+        <img src={presidentTinubuImage} alt="" className="h-[370px] w-80 mx-auto pt-3 box object-cover" />
+          </div>
+          <div className="embla__slide">
+        <img src={dieselImage} alt="" className="h-[370px] w-80 mx-auto pt-3 box object-cover" />
+          </div>
+          <div className="embla__slide">
+        <img src={ceoImage} alt="" className="h-[370px] w-80 mx-auto pt-3 box object-cover" />
+          </div>
+          <div className="embla__slide">
+        <img src={presidentImage} alt="" className="h-[370px] w-80 mx-auto pt-3 box object-cover" />
+          </div>
+        </div>
+        </div>
         <div className="flex flex-row gap-3">
           <button className="btn bg-orange-500 text-white mx-auto mt-3">
-            <h1>🕓 January 12, 2023</h1>
+            <h1>🕓 January 12, 2024</h1>
             <MessageSquareIcon />
-            <p>0</p>
+            <p>23</p>
           </button>
         </div>
         <h1

@@ -75,7 +75,7 @@ function Forminput() {
         />
 
         <select
-          className="font-bold h-9 rounded- md:h-11 md:rounded-lg"
+          className=" h-9 rounded- md:h-11 md:rounded-lg"
           value={fuelType}
           onChange={(e) => setFuelType(e.target.value)}
         >

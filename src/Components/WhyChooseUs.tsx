@@ -31,7 +31,7 @@ function WhyChooseUs() {
           <p className="pt-4 pl-12 text-xl font-bold xl:pt-12">
             Best Diesel Supplier in Lagos & Abuja
           </p>
-          <p className="text-center text-2xl pt-5 xl:text-3xl xl:pr-72 xl:text-center xl:pt-20">
+          <p className="text-center text-2xl pt-5 xl:text-3xl xl:pr-72 xl:text-center xl:pt-20 extraeight:text-xl">
             Our extensive network and commitment to quality make us the best
             diesel supplier in Lagos, Abuja and other strategic locations in
             Nigeria. We ensure timely and reliable diesel delivery, keeping your
@@ -59,7 +59,7 @@ function WhyChooseUs() {
         <h1 className="pl-5 pt-11 text-3xl font-bold text-orange-500 pb-8 xl:text-center">
           customer review
         </h1>
-      <div className=" xl:flex xl:gap-5 pb-14 extrathree:flex extrathree:gap-4 extrathree:pl-4 extranine:border-none" data-aos='fade-up'>
+      <div className=" xl:flex xl:gap-5 pb- extrathree:flex extrathree:gap-4 extrathree:pl-4 extranine:border-none" data-aos='fade-up'>
         <div className="pt-2 box bg-gray-200">
           <div className="flex gap-4 xl:ml-32">
             <img src={faceThree} alt="" className="w-20 rounded-full ml-5 mt-5" />
@@ -126,29 +126,29 @@ function WhyChooseUs() {
             </div>
         </div>
       </div>
-      <div className=" grid grid-cols-1 gap-7 pt-6 xl:flex xl:pt-8 xl:bg-opacity-0 specificImages extrathree:flex extrathree:pl-4">
+      <div className=" grid grid-cols-1 gap-7 pt-6 xl:flex xl:pt-8 xl:bg-opacity-0 specificImages extrathree:flex extrathree:pl-4 extraeight:pt-0 extraeight:grid extraeight:gap-1">
         <img
           src={secondWorkersImage}
           alt=""
-          className="w-[400px] mx-auto h-72 rounded-lg"
+          className="w-full mx-auto h-72 rounded-lg object-cover"
         />
 
         <img
           src={workerImage}
           alt=""
-          className="w-[400px] mx-auto h-72 rounded-lg"
+          className="w-full mx-auto h-72 rounded-lg object-cover"
         />
 
         <img
           src={myImage2}
           alt=""
-          className="w-[400px] mx-auto h-72 rounded-lg"
+          className="w-full mx-auto h-72 rounded-lg object-cover"
         />
       </div>
       <p className="pl-5 pt-6 text-2xl font-bold text-blue-900">
         Timely Delivery with Our Door-to-Door Service
       </p>
-      <p className="pl-5 pr-16 text-lg pt-5 text-blue-900 xl:pb-2">
+      <p className="pl-5 pr-16 text-lg pt-5 text-blue-900 xl:pb-2 pb-7">
         Our door-to-door diesel delivery service guarantees timely arrival.We
         prioritize prompt service to keep your operations runing smoothly
         without interruptions, Thank you !
