@@ -10,6 +10,7 @@ import ceoImageTwo from '../assets/1734866356233.jpg'
 import dieselImage from '../assets/images (18).jpeg'
 import presidentImage from '../assets/images (17).jpeg'
 import presidentTinubuImage from '../assets/images (16).jpeg'
+import stationImage from '../assets/IMG-20250209-WA0045.jpg'
 
 function MiddielRange() {
   const [emblaRef] =useEmblaCarousel({loop:true}, [Autoplay()]);
@@ -89,7 +90,10 @@ function MiddielRange() {
         <img src={presidentTinubuImage} alt="" className="h-[370px] w-80 mx-auto pt-3 box object-cover" />
           </div>
           <div className="embla__slide">
-        <img src={dieselImage} alt="" className="h-[370px] w-80 mx-auto pt-3 box object-cover" />
+        <img src={stationImage} alt="" className="h-[370px] w-90 mx-auto pt-3 box object-cover" />
+          </div>
+          <div className="embla__slide">
+        <img src={dieselImage} alt="" className="h-[370px] w-90 mx-auto pt-3 box object-cover" />
           </div>
           <div className="embla__slide">
         <img src={ceoImage} alt="" className="h-[370px] w-80 mx-auto pt-3 box object-cover" />

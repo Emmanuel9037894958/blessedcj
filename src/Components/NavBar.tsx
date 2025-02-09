@@ -3,6 +3,7 @@ import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import NavList from "./nav/NavList";
 import SearchNav from "./SearchNav";
+import logoName from '../assets/IMG-20250209-WA0050-removebg-preview.png'
 function NavBar() {
   // const location = useLocation();
   // const isActive = (path: any) => location.pathname === path;
@@ -19,14 +20,17 @@ function NavBar() {
         <SearchNav  />
         <div className="">
           <div onClick={menuDropDown} className="">
-            {menu ? <X className="size-11 bg-gray-200 rounded-full" /> : <Menu className="size-11 bg-gray-200" />}
+            {menu ? <X className="size-11 bg-gray-200 rounded-full" /> : <Menu className="size-11 bg-gray-200 rounded-lg" />}
           </div>
           <div>{menu && <NavList />}</div>
         </div>
       </header>
       <div>
       <header className="hidden md:flex fixed z-50 w-full bg-gray-800 shadow-md p-4 box">  
-        <div className=" items-center w-full">  
+        <div className=" items-center w-full"> 
+            <div className="text-white">
+            <img src={logoName} alt=""  className="w-52 absolute"/>
+            </div>
           <nav className="">   
          <ul  className="flex space-x-6 text-white extrasix:ml-7 xl:pl-[400px] xl:gap-9 extrapoint:pl-20 extrapoint:gap-5 lg:pl-15 lg:gap-9">
          <li className="hover:underline hover:text-green-800"><Link to="/" className="text-2xl font- lg:text- lg:font-bold">Home</Link></li>  

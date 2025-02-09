@@ -4,7 +4,7 @@ import workerImage from "../assets/myImages/images (9).jpeg";
 // import useEmblaCarousel from "embla-carousel-react";
 // import Autoplay from "embla-carousel-autoplay";
 import secondWorkersImage from "../assets/myImages/images (11).jpeg";
-import myImage2 from "../assets/myImages/istockphoto-470342624-612x612.jpg";
+import myImage2 from "../assets/IMG-20250209-WA0060.jpg";
 import "../index.css";
 import face from "../assets/new-Consul-General-Amb.-Lot-Egopija-e1621753192302.jpg";
 import faceTwo from "../assets/woman.jpeg";
@@ -142,7 +142,7 @@ function WhyChooseUs() {
         <img
           src={myImage2}
           alt=""
-          className="w-full mx-auto h-72 rounded-lg object-cover"
+          className="w-full mx-auto h-[400px] rounded-lg object-cover"
         />
       </div>
       <p className="pl-5 pt-6 text-2xl font-bold text-blue-900">
