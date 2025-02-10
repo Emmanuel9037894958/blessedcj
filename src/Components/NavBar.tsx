@@ -20,9 +20,9 @@ function NavBar() {
         <SearchNav  />
         <div className="">
           <div onClick={menuDropDown} className="">
-            {menu ? <X className="size-11 bg-gray-200 rounded-full" /> : <Menu className="size-11 bg-gray-200 rounded-lg" />}
+            {menu ? <X className="size-11 bg-gray-200 rounded-full ml-9" /> : <Menu className="size-11 bg-gray-200 rounded-lg" />}
           </div>
-          <div className="pr-11">{menu && <NavList />}</div>
+          <div className="">{menu && <NavList />}</div>
         </div>
       </header>
       <div>
