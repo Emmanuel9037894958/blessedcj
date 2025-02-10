@@ -16,8 +16,8 @@ function NavBar() {
 
   return (
     <section className="relative overflow-hidden">
-      <header className={`fixed z-50 flex justify-between pr-16 pt-2 gap-16 extrasix:hidden ${menu && "bg-white"}`}>
         <SearchNav  />
+      <header className={`fixed z-50 pt-2 extrasix:hidden pl-80 ${menu && ""}`}>
         <div className="">
           <div onClick={menuDropDown} className="">
             {menu ? <X className="size-11 bg-gray-200 rounded-full" /> : <Menu className="size-11 bg-gray-200 rounded-lg" />}

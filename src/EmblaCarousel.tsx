@@ -28,7 +28,7 @@ export function EmblaCarousel() {
           </div>
           <div className="embla__slide w-full relative">
            
-            <h1 className="absolute text-3xl font-medium pr-[120px] ml-10 pt-60 text-gray-300 md:pt-[400px]">
+            <h1 className="absolute text-xl font-bold pr-[120px] ml-10 pt-60 text-gray-300 md:pt-[400px]">
               <span className="text-yellow-100 md:text-5xl xl:text-5xl xl:font-bold">
                 Plan And Manage
               </span>
