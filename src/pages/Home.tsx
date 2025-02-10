@@ -44,7 +44,7 @@ function Home() {
           <div className="">
         <div className="fixed top-[250px] bottom-52 z-50">
         <a href="https://wa.link/ekmonf">
-        <img src={whatappSvg} alt=""  className="bg-green-800 ml-[400px] mt-[180px] z-50 rounded-full extranine:ml-[270px] extranine:mt-[300px] extraeight:ml-[260px] extraeight:mt-[320px] extrafive:ml-[320px]  extrafive:mt-[370px] box extrapointer:ml-[420px] extra:ml-[470px] extraone:hidden extratwo:ml-[560px] extrapointerone:hidden lg:hidden md:hidden xl:hidden whatapp extrafour:ml-[310px]"/>
+        <img src={whatappSvg} alt=""  className="bg-green-800 ml-[300px] mt-[180px] z-50 rounded-full extranine:ml-[270px] extranine:mt-[300px] extraeight:ml-[260px] extraeight:mt-[320px] extrafive:ml-[320px]  extrafive:mt-[370px] box extrapointer:ml-[420px] extra:ml-[470px] extraone:hidden extratwo:ml-[560px] extrapointerone:hidden lg:hidden md:hidden xl:hidden whatapp extrafour:ml-[310px] extratour:ml-72"/>
         </a>
           </div>
             

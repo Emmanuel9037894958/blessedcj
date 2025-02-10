@@ -16,13 +16,13 @@ function NavBar() {
 
   return (
     <section className="relative overflow-hidden">
-      <header className={`fixed z-50 flex justify-between pr-16  pt-1 gap-16 w-full extrasix:hidden bg-gradient-to-r from-gray-600 to-gray-300 h-15 ${menu && "bg-white"}`}>
+      <header className={`fixed z-50 flex justify-between pr-1  pt-1 gap-16 w-full extrasix:hidden bg-gradient-to-r from-gray-600 to-gray-300 h-15 ${menu && "bg-white"}`}>
         <SearchNav  />
         <div className="">
           <div onClick={menuDropDown} className="ml-12">
             {menu ? <X className="size-11 bg-gray-200 rounded-full ml-9" /> : <Menu className="size-11 bg-gray-200 rounded-lg" />}
+          <div className="pr-4">{menu && <NavList />}</div>
           </div>
-          <div className="absolute">{menu && <NavList />}</div>
         </div>
       </header>
       <div>

@@ -13,6 +13,7 @@ export default {
         extratwo: '650px',
         extrathree: '750px',
         extrafour: '350px',
+        extratour: '360px',
         extrafive: '450px',
         extrasix: '800px',
         extraseven: '850px',
