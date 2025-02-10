@@ -5,7 +5,7 @@ import logoImage from "./assets/IMG-20250114-WA0049.jpg";
 import myFirstImage from "./assets/Tank-Farm.jpg";
 import mySecondImage from "./assets/images (3).jpeg";
 import myThirdImage from "./assets/fine.jpeg";
-import myFourthImage from "./assets/images (10).jpeg";
+import myFourthImage from "./assets/IMG-20250209-WA0060.jpg";
 import myTankImage from "./assets/myImages/images (14).jpeg";
 import Button from "./Components/Button";
 
@@ -27,12 +27,13 @@ export function EmblaCarousel() {
             />
           </div>
           <div className="embla__slide w-full relative">
-            <h1 className="absolute text-4xl pr-[110px] ml-10 mt-20 text-gray-300 md:pt-[300px] md:text-5xl space-x-2xl:text-6xl">
-              <span className="  font-normal xl:text-5xl xl:font-bold">
-                One of Africa's largest offshore
+           
+            <h1 className="absolute text-3xl font-medium pr-[120px] ml-10 pt-60 text-gray-300 md:pt-[400px]">
+              <span className="text-yellow-100 md:text-5xl xl:text-5xl xl:font-bold">
+                Plan And Manage
               </span>
-              Offshore Petroleum intake & offtake
-              <span className="font-medium">and storage terminals...</span>
+             <p className="text-white xl:text-4xl"> your Diesel and Fuel Expenses
+             Effectively</p>
             </h1>
             <img
               src={myFourthImage}
@@ -42,12 +43,12 @@ export function EmblaCarousel() {
           </div> 
 
            <div className="embla__slide w-full relative">
-            <h1 className="absolute text-3xl font-medium pr-[120px] ml-10 pt-32 text-gray-300 md:pt-[400px]">
-              <span className="text-yellow-100 md:text-5xl xl:text-5xl xl:font-bold">
-                Plan And Manage
+           <h1 className="absolute text-4xl pr-[110px] ml-10 mt-20 text-gray-300 md:pt-[300px] md:text-5xl space-x-2xl:text-6xl">
+              <span className="  font-normal xl:text-5xl xl:font-bold">
+                One of Africa's largest offshore
               </span>
-             <p className="text-white xl:text-4xl"> your Diesel and Fuel Expenses
-             Effectively</p>
+              Offshore Petroleum intake & offtake
+              <span className="font-medium">and storage terminals...</span>
             </h1>
             <img
               src={myFirstImage}

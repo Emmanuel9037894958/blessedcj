@@ -1,14 +1,18 @@
 // import React from 'react'
 import importationImage from '../assets/images (22).jpeg'
 import secondImage from '../assets/myImages/images (16).jpeg'
+import logWriteUp from '../assets/IMG-20250209-WA0050-removebg-preview.png'
 import Footer from './Footer';
 
 function PetroleumImport() {
   return (
     <div>
        <div>
+       <div className='fixed w-40'>
+        <img src={logWriteUp} alt=""  className=''/>
+       </div>
         <h1 className='absolute pl-8 pt-40 text-2xl text-white font-bold xl:text-5xl xl:pl-32'>Petroleum Importation</h1>
-        <img src={importationImage} alt=""  className='mx-auto object-cover h-72 w-full'/>
+        <img src={importationImage} alt=""  className='mx-auto object-cover h-80 w-full'/>
        </div>
        <div className='pl-5 '>
         <h1 className='text-lg font-bold pt-4'>Petroleum Importation :</h1>

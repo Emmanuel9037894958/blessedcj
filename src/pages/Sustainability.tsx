@@ -8,6 +8,7 @@ import workImage2 from "../assets/Screenshot_20241224-161741_1.png";
 import Footer from "../Components/Footer";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import logWriteUp from '../assets/IMG-20250209-WA0050-removebg-preview.png'
 
 function Sustainability() {
   useEffect(() =>{
@@ -18,6 +19,7 @@ function Sustainability() {
   return (
     <section>
       <div>
+        <img src={logWriteUp} alt=""  className="fixed z-50 w-32 bg-gray-50 rounded-full object-cover ml-2 mt-2"/>
         <h1 className="text-4xl absolute font-bold pt-44 pl-20 text-white xl:text-5xl extranine:text-3xl xl:pl-32">
           Sustainability
         </h1>
