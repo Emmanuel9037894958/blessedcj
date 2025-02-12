@@ -1,11 +1,11 @@
 // import React from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
-// import logoImage from "./assets/IMG-20250114-WA0049.jpg";
+import logoImage from "./assets/IMG-20250114-WA0049.jpg";
 import myFirstImage from "./assets/WhatsApp Image 2025-02-11 at 10.44.10_addd0003.jpg";
 import mySecondImage from "./assets/images (3).jpeg";
 import myThirdImage from "./assets/fine.jpeg";
-// import myFourthImage from "./assets/IMG-20250209-WA0060.jpg";
+import myFourthImage from "./assets/IMG-20250209-WA0060.jpg";
 import myTankImage from "./assets/myImages/images (14).jpeg";
 import Button from "./Components/Button";
 
@@ -19,45 +19,46 @@ export function EmblaCarousel() {
       </div>
       <div className="embla relative " ref={emblaRef}>
         <div className="embla__container">
-          {/* <div className="embla__slide w-full relative">
+          <div className="embla__slide w-full relative">
             <img
               src={logoImage}
               alt="Logo"
               className="w-full h-[400px] object-cover md:h-[770px] brightness-50"
             />
-          </div> */}
-          {/* <div className="embla__slide w-full relative">
-           
-            <h1 className="absolute text-xl font-bold pr-[120px] ml-10 pt-60 text-gray-300 md:pt-[400px]">
-              <span className="text-yellow-100 md:text-5xl xl:text-5xl xl:font-bold">
-                Plan And Manage
-              </span>
-             <p className="text-white xl:text-4xl"> your Diesel and Fuel Expenses
-             Effectively</p>
-            </h1>
-            <img
-              src={myFourthImage}
-              alt="Petroleum Storage"
-              className="w-full h-[400px] object-cover md:h-[770px]"
-            />
-          </div>  */}
+          </div>
 
-           <div className="embla__slide w-full relative">
-           <h1 className="absolute text-xl pr-[110px] ml-10 mt-52 text-gray-300 md:pt-[300px] md:text-5xl space-x-2xl:text-6xl font-bold">
+          <div className="embla__slide w-full relative">
+            <h1 className="absolute text-xl pr-[110px] ml-10 mt-52 text-gray-300 md:pt-[300px] md:text-5xl space-x-2xl:text-6xl font-bold">
               <span className="  font-normal xl:text-5xl xl:font-bold">
-                One of Africa's largest offshore
-              </span>
-              Offshore Petroleum intake & offtake
-              <span className="font-medium">and storage terminals...</span>
+                One of Africa's largest offshore  Petroleum intake & offtake
+              </span> 
+               
+              <span className="font-medium"> and storage terminals...</span>
             </h1>
             <img
               src={myFirstImage}
               alt="Tank Farm"
               className="w-full h-[400px] object-cover md:h-[770px]"
             />
-          </div> 
+          </div>
+          <div className="embla__slide w-full relative">
+            <h1 className="absolute text-xl font-bold pr-[120px] ml-10 pt-60 text-gray-300 md:pt-[400px]">
+              <span className="text-yellow-100 md:text-5xl xl:text-5xl xl:font-bold">
+                Plan And Manage
+              </span>
+              <p className="text-white xl:text-5xl">
+              
+                your Diesel and Fuel Expenses Effectively
+              </p>
+            </h1>
+            <img
+              src={myFourthImage}
+              alt="Petroleum Storage"
+              className="w-full h-[400px] object-cover md:h-[770px]"
+            />
+          </div>
 
-           <div className="embla__slide w-full relative">
+          <div className="embla__slide w-full relative">
             <h1 className="absolute text-3xl font-bold pr-[120px] ml-10 mt-28 text-gray-300 md:pt-[340px] md:text-5xl ">
               <span className="font-light xl:text-6xl">
                 We control one of the most
@@ -70,9 +71,9 @@ export function EmblaCarousel() {
               alt="Advanced Storage"
               className="w-full h-[400px] object-cover md:h-[770px]"
             />
-          </div> 
+          </div>
 
-           <div className="embla__slide w-full relative">
+          <div className="embla__slide w-full relative">
             <div className="absolute md:pt-[300px] md:text-4xl">
               <h1 className="text-4xl pr-48 pt-32 pl-7 text-gray-700 xl:text-6xl ">
                 On-demand Fuel & Diesel delivery service
