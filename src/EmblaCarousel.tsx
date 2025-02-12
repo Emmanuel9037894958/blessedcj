@@ -1,11 +1,11 @@
 // import React from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
-import logoImage from "./assets/IMG-20250114-WA0049.jpg";
+// import logoImage from "./assets/IMG-20250114-WA0049.jpg";
 import myFirstImage from "./assets/WhatsApp Image 2025-02-11 at 10.44.10_addd0003.jpg";
 import mySecondImage from "./assets/images (3).jpeg";
 import myThirdImage from "./assets/fine.jpeg";
-import myFourthImage from "./assets/IMG-20250209-WA0060.jpg";
+// import myFourthImage from "./assets/IMG-20250209-WA0060.jpg";
 import myTankImage from "./assets/myImages/images (14).jpeg";
 import Button from "./Components/Button";
 
