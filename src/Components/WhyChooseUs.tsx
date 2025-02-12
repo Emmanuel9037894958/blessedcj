@@ -73,11 +73,11 @@ function WhyChooseUs() {
             always available to help. Keep up the great work!" -
           </p>
             <div className="flex pl-4">
-           (<img src={svgStar} alt=""  className="w-5"/>
+           <img src={svgStar} alt=""  className="w-5"/>
             <img src={svgStar} alt=""  className="w-5"/>
             <img src={svgStar} alt=""  className="w-5"/>
             <img src={svgStar} alt=""  className="w-5"/>
-            <img src={halfSvg} alt=""  className="w-5"/>)
+            <img src={halfSvg} alt=""  className="w-5"/>
             </div>
         </div>
         <div className=" box bg-gray-200">
@@ -93,11 +93,11 @@ function WhyChooseUs() {
             looking for a trustworthy oil and gas supplier!" -
           </p>
             <div className="flex pl-4">
-           ( <img src={svgStar} alt=""  className="w-5"/>
             <img src={svgStar} alt=""  className="w-5"/>
             <img src={svgStar} alt=""  className="w-5"/>
             <img src={svgStar} alt=""  className="w-5"/>
-            <img src={halfSvg} alt=""  className="w-5"/>)
+            <img src={svgStar} alt=""  className="w-5"/>
+            <img src={halfSvg} alt=""  className="w-5"/>
             </div>
         </div>
         <div className=" box bg-gray-200">
@@ -118,11 +118,11 @@ function WhyChooseUs() {
             affordable oil and gas supplier!" -
           </p>
             <div className="flex pb-11 pl-4">
-           ( <img src={svgStar} alt=""  className="w-5"/>
             <img src={svgStar} alt=""  className="w-5"/>
             <img src={svgStar} alt=""  className="w-5"/>
             <img src={svgStar} alt=""  className="w-5"/>
-            <img src={svgStar} alt=""  className="w-5"/>)
+            <img src={svgStar} alt=""  className="w-5"/>
+            <img src={svgStar} alt=""  className="w-5"/>
             </div>
         </div>
       </div>

@@ -32,7 +32,7 @@ function NavBar() {
             <img src={logoName} alt=""  className="w-52 absolute"/>
             </div>
           <nav className="">   
-         <ul  className="flex space-x-6 text-white extrasix:ml-7 xl:pl-[400px] xl:gap-9 extrapoint:pl-20 extrapoint:gap-5 lg:pl-15 lg:gap-9">
+         <ul  className="flex space-x-6 text-white extrasix:ml-7 xl:justify-end xl:pl-[400px] extrapoint:pl-20 extrapoint:gap-5 lg:pl-15 lg:gap-9">
          <li className="hover:underline hover:text-green-800"><Link to="/" className="text-2xl font- lg:text- lg:font-bold">Home</Link></li>  
          <li className="hover:underline hover:text-green-800"> <Link to="/AboutUs" className="text-2xl font- lg:text- lg:font-bold">AboutUs</Link></li>  
          <li className="hover:underline hover:text-green-800">

@@ -6,7 +6,7 @@ import { EmblaCarousel } from "../EmblaCarousel";
 import ship from "../assets/images (22).jpeg";
 import station from "../assets/myImages/istockphoto-1354049311-612x612.jpg";
 import tankerImage from "../assets/images (20)_1.jpeg";
-import '../index.css'
+import "../index.css";
 import myImage10 from "../assets/images (10).jpeg";
 import svgImage from "../assets/drop-icon.svg";
 import trainDieselImage from "../assets/images (21).jpeg";
@@ -15,8 +15,7 @@ import myImageSever from "../assets/images (19).jpeg";
 import { Link } from "react-router-dom";
 import Forminput from "../Components/FormInput";
 import MiddielRange from "../Components/MiddielRange";
-import whatappSvg from '../assets/whasaap.svg'
-
+import whatappSvg from "../assets/whasaap.svg";
 
 function Home() {
   // const [color, setColor] = useState("green");
@@ -32,8 +31,8 @@ function Home() {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()]);
 
   const businessImportations = [
-    { companyGallary: ship, dec: 'petroleum products importation' },
-    { companyGallary: station, dec: 'petroleum products marketing' },
+    { companyGallary: ship, dec: "petroleum products importation" },
+    { companyGallary: station, dec: "petroleum products marketing" },
   ];
   return (
     <section>
@@ -41,13 +40,17 @@ function Home() {
         <NavBar />
         <div className="fixed text-orange-600 z-50 pt-2 pl-3"></div>
         <EmblaCarousel />
-          <div className="">
-        <div className="fixed top-[250px] bottom-52 z-50">
-        <a href="https://wa.link/ekmonf">
-        <img src={whatappSvg} alt=""  className="bg-green-800 ml-[300px] mt-[180px] z-50 rounded-full extranine:ml-[270px] extranine:mt-[300px] extraeight:ml-[260px] extraeight:mt-[320px] extrafive:ml-[320px]  extrafive:mt-[370px] box extrapointer:ml-[420px] extra:ml-[470px] extraone:hidden extratwo:ml-[560px] extrapointerone:hidden lg:hidden md:hidden xl:hidden whatapp extrafour:ml-[310px] extratour:ml-72"/>
-        </a>
+        <div className="">
+          <div className="fixed top-[580px] bottom-52 z-50 right-2">
+            <a href="https://wa.link/ekmonf">
+              <img
+                src={whatappSvg}
+                alt=""
+                className="bg-green-800 rounded-full lg:hidden md:hidden xl:hidden extraone:hidden extra:hidden"
+              />
+            </a>
           </div>
-            
+
           <h3 className="text-center pt-3 text-xl font-normal text-pink-900">
             Welcome to Blessed CJ Oil & Gas Ltd.
           </h3>
@@ -81,10 +84,12 @@ function Home() {
                 alt=""
                 className="w-full h-96 mx-auto pt-1 object-cover brightness-50"
               />
-            
-               <Link to='/petroleumproductsimportation'>
-               <button className="btn bg-green-600 font-bold text-white w-full xl:text-2xl hover:text-red-700">petroleum products importation
-               </button></Link>
+
+              <Link to="/petroleumproductsimportation">
+                <button className="btn bg-green-600 font-bold text-white w-full xl:text-2xl hover:text-red-700">
+                  petroleum products importation
+                </button>
+              </Link>
             </div>
           ))}
         </div>
@@ -93,15 +98,25 @@ function Home() {
             Our services
           </h1>
           <h3 className="pl-9  font-bold xl:text-2xl">What We Do</h3>
-          <p style={{ padding: "2px 40px 0 40px", fontSize: "large",paddingBottom:'60px' }}>
-            We offer one of the largest offshore liquid bolk terminals (SPM/CBM)
-            in Africa to provide efficient discharge of products for opertors,
-            complemented by world class storge facilities and retail
-            outlets/chanels in all six geopolitical zones in Nigeria. We
-            continuall develop strategic infrastruce to facilitate the
-            operational efficiency of our integrated bouquet of services.  <p>  At our core, we believe in fostering strong partnerships with our stakeholders, ensuring collaborative efforts that drive innovation and excellence. Our dedicated team of professionals is committed to delivering exceptional service, leveraging our expertise to meet the dynamic demands of the market while contributing positively to the communities we serve. We are continuously exploring new technologies and practices to improve our services further and adapt to the evolving landscape of the industry.</p>   <p> Safety is our top priority. We adhere to the highest international standards in safety and environmental management, actively implementing measures to minimize our ecological footprint.</p> Our commitment to responsible operations ensures that we protect our employees, customers, and the environment in which we operate.  
-  
-
+          <p
+            style={{
+              padding: "2px 40px 40px",
+              fontSize: "large",
+              paddingBottom: "60px",
+            }}
+          >
+             We offer one of the largest offshore liquid bulk terminals
+            (SPM/CBM) in Africa, ensuring efficient discharge of products for
+            operators. Our world-class storage facilities and retail outlets
+            span all six geopolitical zones in Nigeria. <p className="pb-3 pt-3"> We focus on strategic
+            infrastructure development to enhance operational efficiency across
+            our integrated services. By fostering strong partnerships and
+            driving innovation, we remain committed to meeting market demands
+            while positively impacting the communities we serve.</p> <p className="">Safety is our
+            top priority, and we adhere to the highest international standards
+            in safety and environmental management, minimizing our ecological
+            footprint. We are dedicated to responsible operations, protecting
+            our employees, customers, and the environment</p>
           </p>
           <div
             style={{
@@ -111,9 +126,12 @@ function Home() {
               marginBottom: "38px",
             }}
           >
-            <img src={myImage10} alt="" className="w-full mx-auto h-80 object-cover xl:h-[900px]" />
+            <img
+              src={myImage10}
+              alt=""
+              className="w-full mx-auto h-80 object-cover xl:h-[900px]"
+            />
             <a href="">
-              
               <button className="btn w-full btn-active font-bold border-r-0 xl:text-xl hover:text-green-600">
                 Storage facilities
               </button>
@@ -127,7 +145,11 @@ function Home() {
               boxShadow: "50px solid gray",
             }}
           >
-            <img src={tankerImage} alt="" className="w-full mx-auto object-cover xl:h-[800px]" />
+            <img
+              src={tankerImage}
+              alt=""
+              className="w-full mx-auto object-cover xl:h-[800px]"
+            />
             <button className="btn w-full btn-active font-bold xl:text-xl hover:text-green-600">
               Logistics & Haulage services
             </button>
@@ -197,7 +219,9 @@ function Home() {
               <button className="btn bg-orange-500 font-bold text-white xl:text-lg">
                 How can i get intouch ?
               </button>
-              <button className="btn bg-orange-500 font-bold text-white xl:text-lg"> Am lost !
+              <button className="btn bg-orange-500 font-bold text-white xl:text-lg">
+                {" "}
+                Am lost !
               </button>
             </div>
           </Link>

@@ -6,15 +6,15 @@ import Footer from "./Footer";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import WhyChooseUs from "./WhyChooseUs";
-import ceoImageTwo from '../assets/1734866356233.jpg'
-import dieselImage from '../assets/images (18).jpeg'
-import presidentImage from '../assets/images (17).jpeg'
-import presidentTinubuImage from '../assets/images (16).jpeg'
-import stationImage from '../assets/IMG-20250209-WA0045.jpg'
+import ceoImageTwo from "../assets/1734866356233.jpg";
+import dieselImage from "../assets/images (18).jpeg";
+import presidentImage from "../assets/images (17).jpeg";
+import presidentTinubuImage from "../assets/images (16).jpeg";
+import stationImage from "../assets/IMG-20250209-WA0045.jpg";
 
 function MiddielRange() {
-  const [emblaRef] =useEmblaCarousel({loop:true}, [Autoplay()]);
-  
+  const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()]);
+
   return (
     <section>
       <div className="flex justify-center pt-1">
@@ -42,8 +42,8 @@ function MiddielRange() {
           <h1 className="text-2xl font-bold text-slate-400 pt-8 xl:pb-3">
             Next Day Delivery
           </h1>
-          <p className='xl:text-xl xl:pr-72'>
-            At Blessed oil and Gas Company 9% of our orders are successfully
+          <p className="xl:text-xl xl:pr-72">
+            At BlessedCJ oil and Gas Company 9% of our orders are successfully
             delivered within 24 hours.
           </p>
         </div>
@@ -51,14 +51,17 @@ function MiddielRange() {
           <h1 className="text-2xl font-bold text-slate-400 xl:pb-3">
             Dedicated Account Managers
           </h1>
-          <p className='xl:text-xl xl:pr-72'>
+          <p className="xl:text-xl xl:pr-72">
             We will assign you an account manager who will be your point of
             contact from day one.
           </p>
         </div>
         <div className="border mx-auto flex flex-col pl-4 pb-4 bg-white justify-center xl:rounded-xl">
-          <h1 className="text-2xl font-bold text-slate-400 xl:pb-3"> Low prices</h1>
-          <p className='xl:text-xl xl:pr-'>
+          <h1 className="text-2xl font-bold text-slate-400 xl:pb-3">
+            {" "}
+            Low prices
+          </h1>
+          <p className="xl:text-xl xl:pr-">
             Our aim is to buy the Diesel on lowest or even at Cost rate and pass
             the savings on to you.
           </p>
@@ -67,13 +70,14 @@ function MiddielRange() {
           <h1 className="text-2xl font-bold text-slate-400 xl:pb-3">
             Some day Emergency Delivery
           </h1>
-          <p className='xl:text-xl xl:pr-'>
+          <p className="xl:text-xl xl:pr-">
             At Blessed CJ oil and Gas Company 94% of our orders are successfully
             delivered within 24 hours.
           </p>
         </div>
       </div>
-      <div className=""
+      <div
+        className=""
         style={{
           border: "1px solid gray",
           marginInline: "auto",
@@ -82,34 +86,62 @@ function MiddielRange() {
       >
         <h1 className="text-center text-2xl font-bold">News & Articles</h1>
         <div className="embla relative " ref={emblaRef}>
-        <div className="embla__container">
-          <div className="embla__slide">
-        <img src={ceoImageTwo} alt="" className="h-[370px] w-80 mx-auto pt-3 box object-cover" />
-          </div>
-          <div className="embla__slide">
-        <img src={presidentTinubuImage} alt="" className="h-[370px] w-80 mx-auto pt-3 box object-cover" />
-          </div>
-          <div className="embla__slide">
-        <img src={stationImage} alt="" className="h-[370px] w-90 mx-auto pt-3 box object-cover" />
-          </div>
-          <div className="embla__slide">
-        <img src={dieselImage} alt="" className="h-[370px] w-90 mx-auto pt-3 box object-cover" />
-          </div>
-          <div className="embla__slide">
-        <img src={ceoImage} alt="" className="h-[370px] w-80 mx-auto pt-3 box object-cover" />
-          </div>
-          <div className="embla__slide">
-        <img src={presidentImage} alt="" className="h-[370px] w-80 mx-auto pt-3 box object-cover" />
+          <div className="embla__container">
+            <div className="embla__slide">
+              <img
+                src={ceoImageTwo}
+                alt=""
+                className="h-[370px] w-80 mx-auto pt-3 box object-cover"
+              />
+            </div>
+            <div className="embla__slide">
+              <a href="https://abcnews.go.com/Business/rising-oil-prices-after-iran-strike-increase-us/story?id=114394795">
+                <img
+                  src={presidentTinubuImage}
+                  alt=""
+                  className="h-[370px] w-80 mx-auto pt-3 box object-cover"
+                />
+              </a>
+            </div>
+            <div className="embla__slide">
+              <img
+                src={stationImage}
+                alt=""
+                className="h-[370px] w-90 mx-auto pt-3 box object-cover"
+              />
+            </div>
+            <div className="embla__slide">
+              <img
+                src={dieselImage}
+                alt=""
+                className="h-[370px] w-90 mx-auto pt-3 box object-cover"
+              />
+            </div>
+            <div className="embla__slide">
+              <img
+                src={ceoImage}
+                alt=""
+                className="h-[370px] w-80 mx-auto pt-3 box object-cover"
+              />
+            </div>
+            <div className="embla__slide">
+              <img
+                src={presidentImage}
+                alt=""
+                className="h-[370px] w-80 mx-auto pt-3 box object-cover"
+              />
+            </div>
           </div>
         </div>
-        </div>
-        <div className="flex flex-row gap-3">
-          <button className="btn bg-orange-500 text-white mx-auto mt-3">
-            <h1>🕓 January 12, 2024</h1>
-            <MessageSquareIcon />
-            <p>23</p>
-          </button>
-        </div>
+        <a href="https://abcnews.go.com/Business/rising-oil-prices-after-iran-strike-increase-us/story?id=114394795">
+          <div className="flex flex-row gap-3">
+            <button className="btn bg-orange-500 text-white mx-auto mt-3">
+              <h1>🕓 January 12, 2024</h1>
+              <MessageSquareIcon />
+              <p>23</p>
+            </button>
+          </div>
+        </a>
         <h1
           style={{
             textAlign: "center",

@@ -13,7 +13,7 @@ function OurServices() {
         <img src={servicesImage} alt=""  className='object-cover w-full h-80 brightness-50'/>
       </div>
       <div>
-        <p className='pl-4 pt-4 text-lg'>At BLESSEDCJ oIL &GAS, we offer a comprehensive range of services designed to meet the unique needs of the oil and gas industry. Our team of experts has years of experience in providing reliable and efficient solutions to our Customer.We provide reliable and efficient diesel supply and distribution services to various industries
+        <p className='pl-4 pt-4 text-lg'>At BLESSEDCJ oIL & GAS, we offer a comprehensive range of services designed to meet the unique needs of the oil and gas industry. Our team of experts has years of experience in providing reliable and efficient solutions to our Customer.We provide reliable and efficient diesel supply and distribution services to various industries
         </p>
         <h1 className='font-semibold pl-4 pt-2'>Lubricant Services:</h1>
         <p className='pl-4'>We offer a range of lubricants designed to meet the unique needs of your equipment.

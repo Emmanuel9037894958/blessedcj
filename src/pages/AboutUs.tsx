@@ -22,7 +22,7 @@ function AboutUs() {
     },[]);
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()]);
   return (
-    <div>
+    <div className="overflow-hidden">
       <NavBar />
       <div>
         <img
@@ -70,11 +70,10 @@ function AboutUs() {
           Natural Gas). With the advent of the"Gas on wheels" methodology , gas
           distribution has been actively gathering momentum. However, supply of
           CNG is flawed after a distance range of 200 kms. One solution that can
-          affectively tacklethis flaw is the adoption of LNG (Liquefied Natural
+          effectively tackle this flaw is the adoption of LNG (Liquefied Natural
           GAS) as an alternative to CNG most especially for longer distances.
-          LNG has a higher calorific value, is more economical in terms ofhigher
-          volume of gas being transported in terms of higher volume of gas being
-          transported (6x more than CNG). First Deliverly Expected by Q4 2021.
+          LNG has a higher calorific value, is more economical in terms of higher
+          volume of gas being transported (6x more than CNG). First Deliverly Expected by Q4 2021.
         </p>
       </div>
       <div className="bg-gray-100">
@@ -89,10 +88,7 @@ function AboutUs() {
           anywhere in Nigeria. Industrial customers in Nigeria face severe power
           issues both in terms of reliability and quantity of power. There are
           Giga Watts of captive solutions in place today but are expensive and
-          require specialized skills/mangement. GLNG with the intention of
-          meeting her customers’ needs, delivers higher natural gas volumes
-          through virtual pipelines (LNG) to stranded customers in many
-          areas within Nigeria.
+          require specialized skills & mangement.
         </p>
         <div>
           <p className="pl-5 pt-3 pr-4 pb-8 ">
@@ -100,7 +96,7 @@ function AboutUs() {
             facility, along with numerous ancillary systems providing security
             and favourable operating conditions. The entire Liquefaction
             facility contains state-of-the-art fire and gas detection systems
-            which complement the emergency slam shut valves installed in the gas
+            which complement the emergency slam shut values installed in the gas
             supply system. The electrical panels all contain fire suppression
             mechanisms to prevent fire damage, and the compressor house itself
             has been designed to provide suitable emergency exits with fire

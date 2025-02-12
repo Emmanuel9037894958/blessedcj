@@ -2,7 +2,7 @@
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import logoImage from "./assets/IMG-20250114-WA0049.jpg";
-import myFirstImage from "./assets/Tank-Farm.jpg";
+import myFirstImage from "./assets/WhatsApp Image 2025-02-11 at 10.44.10_addd0003.jpg";
 import mySecondImage from "./assets/images (3).jpeg";
 import myThirdImage from "./assets/fine.jpeg";
 import myFourthImage from "./assets/IMG-20250209-WA0060.jpg";
@@ -19,14 +19,14 @@ export function EmblaCarousel() {
       </div>
       <div className="embla relative " ref={emblaRef}>
         <div className="embla__container">
-          <div className="embla__slide w-full relative">
+          {/* <div className="embla__slide w-full relative">
             <img
               src={logoImage}
               alt="Logo"
               className="w-full h-[400px] object-cover md:h-[770px] brightness-50"
             />
-          </div>
-          <div className="embla__slide w-full relative">
+          </div> */}
+          {/* <div className="embla__slide w-full relative">
            
             <h1 className="absolute text-xl font-bold pr-[120px] ml-10 pt-60 text-gray-300 md:pt-[400px]">
               <span className="text-yellow-100 md:text-5xl xl:text-5xl xl:font-bold">
@@ -40,10 +40,10 @@ export function EmblaCarousel() {
               alt="Petroleum Storage"
               className="w-full h-[400px] object-cover md:h-[770px]"
             />
-          </div> 
+          </div>  */}
 
            <div className="embla__slide w-full relative">
-           <h1 className="absolute text-4xl pr-[110px] ml-10 mt-20 text-gray-300 md:pt-[300px] md:text-5xl space-x-2xl:text-6xl">
+           <h1 className="absolute text-xl pr-[110px] ml-10 mt-52 text-gray-300 md:pt-[300px] md:text-5xl space-x-2xl:text-6xl font-bold">
               <span className="  font-normal xl:text-5xl xl:font-bold">
                 One of Africa's largest offshore
               </span>
