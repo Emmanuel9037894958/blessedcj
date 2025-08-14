@@ -12,11 +12,11 @@
   flex: 0 0 100%;
   min-width: 0;
 }
-.box{
-  box-shadow: 0 8px 6px -1px rgba(0,0,0,0.8);
+.box {
+  box-shadow: 0 8px 6px -1px rgba(0, 0, 0, 0.8);
 }
-.specificImages :hover{
-        transform: scale(1.05);
+.specificImages:hover {
+  transform: scale(1.05);
 }
 .whatsapp-icon {  
   position: sticky;  
@@ -28,12 +28,16 @@
   max-width: 100%;  
 }
 
+/* Default light mode */
+html, body {
+  background-color: white;
+  color: black;
+}
+
+/* If device is in dark mode → still show light mode */
 @media (prefers-color-scheme: dark) {
   html, body {
     background-color: white !important;
     color: black !important;
   }
 }
-
-
-
