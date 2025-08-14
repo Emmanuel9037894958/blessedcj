@@ -12,6 +12,7 @@ import MiddielRange from "../Components/MiddielRange";
 import whatappSvg from "../assets/whasaap.svg";
 import { useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
+import Footer from "../Components/Footer";
 
 
 function Home() {
@@ -251,6 +252,7 @@ function Home() {
           </h1>
         </div>
         <MiddielRange />
+        <Footer />
       </div>
     </section>
   );

@@ -148,7 +148,7 @@ function MiddielRange() {
           </p>
         </div>
         <WhyChooseUs />
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </section>
   );
