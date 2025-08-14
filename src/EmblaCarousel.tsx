@@ -5,9 +5,10 @@ import logoImage from "./assets/IMG-20250114-WA0049.jpg";
 import myFirstImage from "./assets/WhatsApp Image 2025-02-11 at 10.44.10_addd0003.jpg";
 import mySecondImage from "./assets/images (3).jpeg";
 import myThirdImage from "./assets/fine.jpeg";
-import myFourthImage from "./assets/IMG-20250209-WA0060.jpg";
+import station2 from "./assets/Station2.jpg";
 import myTankImage from "./assets/myImages/images (14).jpeg";
 import Button from "./Components/Button";
+// import station1 from './assets/Station1.jpg'
 
 export function EmblaCarousel() {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()]);
@@ -23,7 +24,7 @@ export function EmblaCarousel() {
             <img
               src={logoImage}
               alt="Logo"
-              className="w-full h-[400px] object-cover md:h-[770px] brightness-50"
+              className="w-full h-[356px] object-cover md:h-[770px] brightness-50 mt-11 xl:h-[736px]"
             />
           </div>
 
@@ -31,8 +32,8 @@ export function EmblaCarousel() {
             <h1 className="absolute text-xl pr-[110px] ml-10 mt-52 text-gray-300 md:pt-[300px] md:text-5xl space-x-2xl:text-6xl font-bold">
               <span className="  font-normal xl:text-5xl xl:font-bold">
                 One of Africa's largest offshore  Petroleum intake & offtake
-              </span> 
-               
+              </span>
+
               <span className="font-medium"> and storage terminals...</span>
             </h1>
             <img
@@ -42,21 +43,25 @@ export function EmblaCarousel() {
             />
           </div>
           <div className="embla__slide w-full relative">
-            <h1 className="absolute text-xl font-bold pr-[120px] ml-10 pt-60 text-gray-300 md:pt-[400px]">
-              <span className="text-yellow-100 md:text-5xl xl:text-5xl xl:font-bold">
+            {/* Image */}
+            <img
+              src={station2}
+              alt="Petroleum Storage"
+              className="w-full h-[400px] object-cover md:h-[770px] brightness-50"
+            />
+
+            {/* Text Overlay */}
+            <div className="absolute inset-0 flex flex-col justify-center ml-10 z-10 pt-28">
+              <h1 className="text-yellow-100 text-xl font-bold md:text-5xl xl:text-5xl xl:font-bold">
                 Plan And Manage
-              </span>
-              <p className="text-white xl:text-5xl">
-              
+              </h1>
+              <p className="text-white text-2xl pr-10 xl:text-5xl">
                 your Diesel and Fuel Expenses Effectively
               </p>
-            </h1>
-            <img
-              src={myFourthImage}
-              alt="Petroleum Storage"
-              className="w-full h-[400px] object-cover md:h-[770px]"
-            />
+            </div>
           </div>
+
+
 
           <div className="embla__slide w-full relative">
             <h1 className="absolute text-3xl font-bold pr-[120px] ml-10 mt-28 text-gray-300 md:pt-[340px] md:text-5xl ">

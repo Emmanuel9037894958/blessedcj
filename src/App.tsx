@@ -12,8 +12,7 @@ import Welcome from './Components/Welcome'
 
 //  style={{
 //                   color: isActive("/contact")
-//                     ? "white"
-//                     : "rgb(234 88 12 / var(--tw-text-opacity, 1))",
+//                     ?                  : "rgb(234 88 12 / var(--tw-text-opacity, 1))",
 //                 }}
 
 function App() {
@@ -34,4 +33,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

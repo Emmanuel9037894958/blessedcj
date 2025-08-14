@@ -13,4 +13,11 @@
   min-width: 0;
 }
 
+@media (prefers-color-scheme: dark) {
+  html, body {
+    background-color: white !important;
+    color: black !important;
+  }
+}
+
 

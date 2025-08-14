@@ -1,14 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: false, // ⬅ This disables Tailwind's dark mode
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-   
     extend: {
       screens: {
-        extra:'550px',
+        extra: '550px',
         extraone: '600px',
         extratwo: '650px',
         extrathree: '750px',
@@ -24,7 +24,6 @@ export default {
         extrapointer: '500px',
         extrapointerone: '700px',
         endpoint: '900px',
-        
       },
     },
   },
@@ -32,4 +31,3 @@ export default {
     require('daisyui'),
   ],
 }
-

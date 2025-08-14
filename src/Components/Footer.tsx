@@ -1,77 +1,86 @@
-// import React from "react";
-import { FacebookIcon } from "lucide-react";
-import { TwitterIcon } from "lucide-react";
-import { PhoneIncomingIcon } from "lucide-react";
-import { MessageSquareShare } from "lucide-react";
+import { FacebookIcon, TwitterIcon, PhoneIncomingIcon, MessageSquareShare } from "lucide-react";
 import { Link } from "react-router-dom";
+import oilimage from "../assets/oil-fac.jpg";
 
 function Footer() {
   return (
-    <section>
-      <div className="bg-gray-800 pt-5 xl:grid grid-cols-4 xl:text-xl">
-        <div className="text-white pl-4">
-          <h1 className="text-2xl pt-6 pb-3">About</h1>
+    <section
+      className="relative bg-fixed bg-center bg-cover bg-no-repeat"
+      style={{
+        backgroundImage: `url(${oilimage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      {/* Dark overlay for readability */}
+      <div className="absolute inset-0 bg-black bg-opacity-70"></div>
 
-          <div className="flex flex-col gap-1">
-            <Link to='/' className="hover:underline hover:text-green-800"><h2>Our Company</h2></Link>
-            <Link to='/' className="hover:underline hover:text-green-800"><h2>Who We Are</h2></Link>
-            <Link to='/' className="hover:underline hover:text-green-800"><h2>What We Do</h2></Link>
-            <Link to='/' className="hover:underline hover:text-green-800"><h2>The Board of Directors</h2></Link>
-            <Link to='/' className="hover:underline hover:text-green-800"><h2>The Monagement Team</h2></Link>
+      <div className="relative xl:grid grid-cols-4 xl:text-xl text-white pt-5 italic">
+        {/* About Section */}
+        <div className="pl-4">
+          <h1 className="text-2xl pt-6 pb-3 font-bold">About</h1>
+          <div className="flex flex-col gap-7 pt-10">
+            <Link to="/" className=" hover:text-orange-500">Our Company</Link>
+            <Link to="/" className=" hover:text-orange-500">Who We Are</Link>
+            <Link to="/" className=" hover:text-orange-500">What We Do</Link>
+            <Link to="/" className=" hover:text-orange-500">The Board of Directors</Link>
+            <Link to="/" className=" hover:text-orange-500">The Management Team</Link>
           </div>
         </div>
-        <div className="text-white pl-4">
-          <h1 className="text-2xl pt-6 pb-3">Our Services</h1>
 
-          <div className="flex flex-col gap-1">
-           <Link to='/' className="hover:text-green-800 hover:underline"><h2>logistices</h2></Link>
-           <Link to='/' className="hover:text-green-800 hover:underline"><h2>Offshore Intake/Offtake Facilities</h2></Link>
-           <Link to='/' className="hover:text-green-800 hover:underline"><h2>Petroleum Product Marketing</h2></Link>
-           <Link to='/' className="hover:text-green-800 hover:underline"><h2>Storage Terminal Facilities</h2></Link>
+        {/* Services */}
+        <div className="pl-4">
+          <h1 className="text-2xl pt-6 pb-3 font-bold">Our Services</h1>
+          <div className="flex flex-col gap-7 pt-10">
+            <Link to="/" className=" hover:text-orange-500">Logistics</Link>
+            <Link to="/" className=" hover:text-orange-500">Offshore Intake/Offtake Facilities</Link>
+            <Link to="/" className=" hover:text-orange-500">Petroleum Product Marketing</Link>
+            <Link to="/" className=" hover:text-orange-500">Storage Terminal Facilities</Link>
           </div>
         </div>
-        <div className="text-white pl-4">
-          <h1 className="text-2xl pt-6 pb-3">Find Out More</h1>
 
-          <div className="flex flex-col gap-1">
-            <Link to='/' className="hover:text-green-800 hover:underline"><h2>Career Opportunities</h2></Link>
-            <Link to='/Contact' className="hover:text-green-800 hover:underline"><h2>Order Product Online</h2></Link>
-            <Link to='/' className="hover:text-green-800 hover:underline"><h2>Blessed CJ Business Card</h2></Link>
-            <Link to='/' className="hover:text-green-800 hover:underline"><h2>On-Demand Bulk Order</h2></Link>
-            <a href="https://www.google.com/search?q=new+and+article+about+diesel+price+in+nigeria&oq=new+and+article+about+dies&gs_lcrp=EgZjaHJvbWUqBwgEECEYoAEyBggAEEUYOTIHCAEQIRigATIHCAIQIRigATIHCAMQIRigATIHCAQQIRigAdIBCTE2MjcyajBqNKgCCLACAQ&sourceid=chrome&ie=UTF-8"><h2 className="hover:underline hover:text-green-800">News Blog & Articles</h2></a>
-            <Link to='/' className="hover:text-green-800 hover:underline"> <h2>Vendor Resgistration</h2></Link>
+        {/* More */}
+        <div className="pl-4">
+          <h1 className="text-2xl pt-6 pb-3 font-bold">Find Out More</h1>
+          <div className="flex flex-col gap-7 pt-10">
+            <Link to="/" className=" hover:text-orange-500">Career Opportunities</Link>
+            <Link to="/Contact" className=" hover:text-orange-500">Order Product Online</Link>
+            <Link to="/" className=" hover:text-orange-500">Blessed CJ Business Card</Link>
+            <Link to="/" className=" hover:text-orange-500">On-Demand Bulk Order</Link>
+            <a
+              href="https://www.google.com/search?q=new+and+article+about+diesel+price+in+nigeria"
+              className=" hover:text-orange-500"
+            >
+              News Blog & Articles
+            </a>
+            <Link to="/" className=" hover:text-orange-500">Vendor Registration</Link>
           </div>
         </div>
-        <div className="text-white pl-4">
-          <h1 className="text-2xl pt-6 pb-3">Help & Support</h1>
 
-          <div className="flex flex-col gap-1 pb-5">
-            <Link to='/' className="hover:text-green-800 hover:underline"><h2>Customer Care</h2></Link>
-            <Link to="/contact" className="hover:text-green-800 hover:underline">Contact Us</Link>
+        {/* Support */}
+        <div className="pl-4">
+          <h1 className="text-2xl pt-6 pb-3 font-bold">Help & Support</h1>
+          <div className="flex flex-col gap-7 pt-10 pb-5">
+            <Link to="/" className=" hover:text-orange-500">Customer Care</Link>
+            <Link to="/contact" className=" hover:text-orange-500">Contact Us</Link>
           </div>
         </div>
-        <div className="flex gap-5 pl-3 pt-8 pb-8 xl:flex justify-items-end ">
-          <div className="border w-9 h-8 pl-1 pt-1 rounded-full xl:border-none extra:border-none extrafour:border-none extranine:border-none">
-          <a href="https://web.facebook.com/share/1B2ET8embo/">  <FacebookIcon
-              className="text-white rounded-btn bg-blue-700"
-              fill="white"  
-            /></a>
-          </div>
-          <div className="border w-9 h-7 pl-1 pt-1 rounded-full xl:border-none extra:border-none extrafour:border-none extranine:border-none">
-            <TwitterIcon className="text-blue-700 fill-indigo-900" />
-          </div>
-          <div className="border w-9 h-7 pl-1 pt-1 rounded-full xl:border-none extra:border-none extrafour:border-none extranine:border-none">
-            <PhoneIncomingIcon className="text-green-700" fill="green" />
-          </div>
-          <div className="text-white border w-9 h-8 pl-1 pt-1 rounded-full xl:border-none extra:border-none extrafour:border-none extranine:border-none">
-            <MessageSquareShare  className=""/>
-          </div>
+
+        {/* Social Icons */}
+        <div className="col-span-4 flex gap-5 pl-3 pt-8 pb-8">
+          <a href="https://web.facebook.com/share/1B2ET8embo/">
+            <FacebookIcon className="bg-blue-700 text-white rounded-full p-1 w-8 h-8" />
+          </a>
+          <TwitterIcon className="text-blue-500 bg-white rounded-full p-1 w-8 h-8" />
+          <PhoneIncomingIcon className="text-green-500 bg-white rounded-full p-1 w-8 h-8" />
+          <MessageSquareShare className="text-white bg-orange-500 rounded-full p-1 w-8 h-8" />
         </div>
       </div>
-        <p className="font-light pt-5 pl-3 text-white bg-gray-900 xl:text-xl">
-          Copyright ©{new Date().getFullYear()} Blessed CJ Oil & Gas Company-
-          Designed and Built by <a href="">Emma-Innovation</a>
-        </p>
+
+      <p className="relative font-light pt-5 pl-3 text-white bg-gray-900 xl:text-xl italic">
+        Copyright ©{new Date().getFullYear()} Blessed CJ Oil & Gas Company -
+        Designed and Built by <a href="" className="text-orange-500">Emma-Innovation</a>
+      </p>
     </section>
   );
 }
