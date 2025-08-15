@@ -164,33 +164,33 @@ function Home() {
               <input
                 type="text"
                 placeholder="Full Name"
-                className="h-10 px-3 rounded border border-gray-300"
+                className="h-10 px-3 rounded border border-gray-300 bg-white"
                 value={fullName}
                 onChange={(e) => setFullName(e.target.value)}
               />
               <input
                 type="text"
                 placeholder="Company Name"
-                className="h-10 px-3 rounded border border-gray-300"
+                className="h-10 px-3 rounded border border-gray-300 bg-white"
                 value={companyName}
                 onChange={(e) => setCompanyName(e.target.value)}
               />
               <input
                 type="text"
                 placeholder="Delivery Address"
-                className="h-10 px-3 rounded border border-gray-300"
+                className="h-10 px-3 rounded border border-gray-300 bg-white"
                 value={deliveryAddress}
                 onChange={(e) => setDeliveryAddress(e.target.value)}
               />
               <input
                 type="text"
                 placeholder="Phone No"
-                className="h-10 px-3 rounded border border-gray-300"
+                className="h-10 px-3 rounded border border-gray-300 bg-white"
                 value={phoneNo}
                 onChange={(e) => setPhoneNo(e.target.value)}
               />
               <select
-                className="h-10 px-2 rounded border border-gray-300"
+                className="h-10 px-2 rounded border border-gray-300 bg-white"
                 value={fuelType}
                 onChange={(e) => setFuelType(e.target.value)}
               >
@@ -203,7 +203,7 @@ function Home() {
                 <option value="Lubricants">Lubricants</option>
               </select>
               <select
-                className="h-10 px-2 rounded border border-gray-300"
+                className="h-10 px-2 rounded border border-gray-300 bg-white"
                 value={liters}
                 onChange={(e) => setLiters(e.target.value)}
               >

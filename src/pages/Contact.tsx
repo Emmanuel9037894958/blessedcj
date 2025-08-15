@@ -85,28 +85,28 @@ function Contact() {
         <input
           type="text"
           placeholder="Your Name"
-          className="w-[400px] h-10 pl-3 rounded border-b-2 extranine:w-52"
+          className="w-[400px] h-10 pl-3 rounded border-b-2 extranine:w- bg-white"
           value={yourName}
           onChange={(e) => setName(e.target.value)}
         />
         <input
           type="text"
           placeholder="Company Name"
-          className="w-[400px] h-10 pl-3 rounded border-b-2 extranine:w-52"
+          className="w-[400px] h-10 pl-3 rounded border-b-2 extranine:w- bg-white"
           value={companyName}
           onChange={(e) => setCompanyName(e.target.value)}
         />
         <input
           type="email"
           placeholder="Your Email ID"
-          className="w-[400px] h-10 pl-3 rounded border-b-2 extranine:w-52"
+          className="w-[400px] h-10 pl-3 rounded border-b-2 extranine:w- bg-white"
           value={emailId}
           onChange={(e) => setEmailId(e.target.value)}
         />
         <input
           type="number"
           placeholder="Mobile Number"
-          className="w-[400px] h-10 pl-3 rounded border-b-2 extranine:w-52"
+          className="w-[400px] h-10 pl-3 rounded border-b-2 extranine:w- bg-white"
           value={mobileNum}
           onChange={(e) => setMobileNum(e.target.value)}
         />
