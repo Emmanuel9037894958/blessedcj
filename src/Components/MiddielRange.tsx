@@ -6,7 +6,7 @@ import presidentImage from "../assets/images (17).jpeg";
 import presidentTinubuImage from "../assets/images (16).jpeg";
 import stationImage from "../assets/IMG-20250209-WA0045.jpg";
 import { MessageSquareIcon } from "lucide-react";
-import Footer from "./Footer";
+// import Footer from "./Footer";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import WhyChooseUs from "./WhyChooseUs";
