@@ -251,9 +251,9 @@ function Home() {
             />
           </h1>
         </div>
+      </div>
         <MiddielRange />
         <Footer />
-      </div>
     </section>
   );
 }

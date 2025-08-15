@@ -77,7 +77,7 @@ function Footer() {
         </div>
       </div>
 
-      <p className="relative font-light pt-5 pl-3 text-white bg-gray-900 xl:text-xl italic">
+      <p className="relative font-light pt-5 pl-3 text-white bg-gray-900 xl:text-xl italic pb-0">
         Copyright ©{new Date().getFullYear()} Blessed CJ Oil & Gas Company -
         Designed and Built by <a href="" className="text-orange-500">Emma-Innovation</a>
       </p>
